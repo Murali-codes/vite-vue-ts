@@ -12,6 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "pre-commit": "^1.2.2",
     "vue": "^3.2.37"
   },
   "devDependencies": {
