@@ -1,0 +1,18 @@
++-   repo: https://github.com/pre-commit/mirrors-prettier
++    rev: ''  # Use the sha / tag you want to point at
++    hooks:
++    -   id: prettier
++-   repo: https://github.com/pre-commit/mirrors-eslint
++    rev: ''  # Use the sha / tag you want to point at
++    hooks:
++    -   id: eslint
++        files: \.([jt]sx?|vue)$  # *.js, *.jsx, *.ts, *.tsx and *.vue
++        types: [file]
++        additional_dependencies:
++        -   eslint@7.31.0
++        -   typescript@4.3.5
++        -   "@typescript-eslint/eslint-plugin@4.28.5"
++        -   "@typescript-eslint/parser@4.28.5"
++        -   eslint-plugin-vue@7.14.0
++        -   vue-eslint-parser@7.9.0
++        -   eslint-config-prettier@8.3.0
